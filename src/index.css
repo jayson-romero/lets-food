@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   --clr-primary: #FFCB45
+}
+
+.btn {
+   background: var(--clr-primary);
+   justify-content: center;
+   align-items: center;
+   padding: 12px 24px;
+   gap: 16px;
+   
+   border-radius: 50px;
+}
+
+.btn:hover {
+   box-shadow:  2px 5px 12px rgba(0, 0, 0, 0.15);
+   cursor: pointer;
+}
+
+.navbar-link {
+font-weight: 500;
+font-size: 22px;
+line-height: 28px;
+color: rgba(29, 29, 29, 0.7);
+padding-bottom: 5px;
+border-bottom: 5px solid transparent;
+transition: border-bottom 0.2s ease-out;
+cursor: pointer;
+}
+
+
+.navbar-link:hover {
+   color: #000;
+   border-bottom: 5px solid var(--clr-primary);
+   cursor: pointer;
+}
+
+.icon {
+   width: 24px;
+   height: 24px;
+}
+
+.icon:hover {
+  text-shadow:  2px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+span {
+   color: var(--clr-primary);
+}
