@@ -10,6 +10,7 @@ export default {
         colors: {
           primary: "#FFCB45",
           black: "#1D1D1D",
+          lightblack: "rgba(29, 29, 29, 0.7)",
           white: "#FFFFFF",
           lightbg: "#FFF9EA",
         },

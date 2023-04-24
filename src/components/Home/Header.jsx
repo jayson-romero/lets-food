@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <div className='hero-section bg-lightbg relative'>
 
+       {/* Dots and noodle images */}
          <div className='absolute top-[700px] lg:top-[550px] xl:left-[220px]'>
             <img src={noodle} alt="noodle-shape" />
          </div>
