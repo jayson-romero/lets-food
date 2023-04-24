@@ -6,7 +6,7 @@ import dots from '../../assets/hero-dots-img.png'
 
 const Header = () => {
   return (
-    <div className='hero-section bg-lightbg relative'>
+    <div className='hero-section bg-lightbg relative mb-[80px]'>
 
        {/* Dots and noodle images */}
          <div className='absolute top-[700px] lg:top-[550px] xl:left-[220px]'>

@@ -54,3 +54,30 @@ cursor: pointer;
 span {
    color: var(--clr-primary);
 }
+
+.card {
+   background: #F1F1F1;
+   border-radius: 10px;
+   filter: drop-shadow(2px 5px 12px rgba(0, 0, 0, 0.15));
+   padding: 13px 25px 128px;
+   transition: filter 0.3s ease-in;
+   cursor: pointer;
+}  
+
+.card:hover {
+ 
+   border-radius: 20px;
+   filter: drop-shadow(2px 5px 12px rgba(0, 0, 0, 0.50));
+ 
+}  
+.card img {
+   width: 230px;
+ 
+}
+
+.card div {
+   text-align: center;
+   border-radius: 10px;
+   width: 100%;
+   padding: 14px 22px;
+}
