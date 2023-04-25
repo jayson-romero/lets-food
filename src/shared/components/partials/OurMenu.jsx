@@ -1,39 +1,40 @@
 import Header from "./Header"
 import styles from "../../../style"
+import ProductCard from "./ProductCard"
 import {menu} from "../../../utilities/data"
+
+import { Link } from "react-router-dom"
 
 const OurMenu = () => {
 
       const favorite = menu.filter((item) => {
-         return item.favorite === true
+         return item.popular === true
       })
 
 
   return (
-   <div className={`${styles.paddingY} howItWorks-section`}>
+   <div className={`${styles.paddingY} ${styles.maxWidth}  howItWorks-section`}>
 
    <Header head = "Our Menu"
            title ="Our Popular Menu"
            desc ="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam."/>
 
-   <div className={`${styles.maxWidth} ${styles.paddingX} flex flex-col sm:flex-row gap-[24px] justify-center  items-center `}>
+   <div className={` ${styles.paddingX} grid grid-cols-2  md:grid-flow-row md:grid-cols-4 gap-[24px]`}>
+   
       {
          favorite.map((product) => (
-            <div key={product.id} className={`card relative`}>
-
-               <img src={product.img} alt={product.title} className="w-[230px]" />
-
-               <div className="bg-[#FFFFFF] absolute bottom-0 left-0">
-                  <h3>{product.title}</h3>
-                  <p>{product.desc}</p>
-               </div>
-
-            </div>
+            <Link key={product.id} to={`/menu/${product.id}`}>
+              <ProductCard {...product}/>
+            </Link>
          ))
-      }
-
+      }   
    </div>
-
+   <Link to="/menu">
+      <div className={`${styles.flexCenter} mt-[68px]`}>
+       <button 
+       className={`${styles.flexCenter} btn`}>More Menu</button>
+       </div>
+   </Link>
 </div>
   )
 }

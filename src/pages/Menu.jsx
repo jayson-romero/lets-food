@@ -1,14 +1,29 @@
 import { Link } from 'react-router-dom'
+import Header from '../shared/components/partials/Header'
+import styles from '../style'
+
+import {menu} from '../utilities/data'
+import ProductCard from '../shared/components/partials/ProductCard'
 
 const MenuPage = () => {
   return (
-    <div>
-      Menu Page
-      <Link to="/menu/1">Product 1</Link>
-      <Link to="/menu/2">Product 2</Link>
-      <Link to="/menu/3">Product 3</Link>
-      <Link to="/menu/4">Product 4</Link>
-      <Link to="/menu/5">Product 5</Link>
+    <div className="Menu-Page">
+      <div className={`bg-lightbg py-[41px]`}>
+      <Header head = "Our Menu"
+           title ="Our Popular Menu"
+           desc ="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam."/>
+      </div>
+
+      <div className={` ${styles.paddingX} ${styles.marginY} ${styles.maxWidth} grid grid-cols-2  md:grid-flow-row md:grid-cols-4 gap-[24px] mt-[41px]`}>
+      {
+        menu.map((product) => (
+          <Link key={product.id} to={`/menu/${product.id}`}>
+              <ProductCard {...product}/>
+          </Link>
+        ))
+      }
+     </div>
+     
     </div>
   )
 }

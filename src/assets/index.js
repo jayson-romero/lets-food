@@ -13,9 +13,7 @@ import menu12 from './Product 12.png';
 import menu13 from './Product 13.png';
 import menu14 from './Product 14.png';
 import menu15 from './Product 15.png';
-import menu16new from './Product 1 new.png';
-import menu17new from './Product 2 new.png';
-import menu18new from './Product 3 new.png';
+
 
 export {
    menu1,
@@ -33,8 +31,4 @@ export {
    menu13,
    menu14,
    menu15,
-   menu16new,
-   menu17new,
-   menu18new,
-
 }

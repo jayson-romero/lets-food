@@ -1,7 +1,173 @@
 import courier from '../assets/HowItWorks-courier.png';
 import delivery from '../assets/HowItWorks-delivery.png';
 import order from '../assets/HowItWorks-order.png';
-import { menu1,menu2,  menu3, menu4, menu5, menu6, menu16new, menu17new, menu18new } from '../assets'
+import { menu1, menu2,  menu3, menu4, menu5, menu6, menu7, menu8, menu9, menu10, menu11, menu12, menu13, menu14, menu15 } from '../assets'
+
+
+
+export const menu = [
+   {
+      id : "product1",
+      title: "Mie Ramen",
+      desc: "lorem ipsum",
+      img: menu1,
+      favorite: true,
+      popular: true,
+      prize: 20.2
+
+   },
+   {
+      id : "product2",
+      title: "Salad Tahu",
+      desc: "lorem ipsum",
+      img: menu2,
+      favorite: true,
+      popular: true,
+      prize: 20.2
+
+   },
+   {
+      id : "product3",
+      title: "Roti Bakar",
+      desc: "lorem ipsum",
+      img: menu3,
+      favorite: true,
+      popular: true,
+      prize: 20.2
+
+   },
+   {
+      id : "product4",
+      title: "Spaghetti",
+      desc: "lorem ipsum",
+      img: menu4,
+      favorite: false,
+      popular: true,
+      prize: 20.2
+
+   }, 
+   {
+      id : "product5",
+      title: "Spaghetti Tahu",
+      desc: "lorem ipsum",
+      img: menu5,
+      favorite: false,
+      popular: false,
+      prize: 20.2
+
+   },
+   {
+      id : "product6",
+      title: "Salad Noodle",
+      desc: "lorem ipsum",
+      img: menu6,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   {
+      id : "product7",
+      title: "Egg Canton",
+      desc: "lorem ipsum",
+      img: menu7,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product8",
+      title: "White Spaghetti",
+      desc: "lorem ipsum",
+      img: menu8,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product9",
+      title: "Siopao Ramen",
+      desc: "lorem ipsum",
+      img: menu9,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product10",
+      title: "Sinigang",
+      desc: "lorem ipsum",
+      img: menu10,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product11",
+      title: "LuckyMe Beef",
+      desc: "lorem ipsum",
+      img: menu11,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product12",
+      title: "LuckyMe Chicken",
+      desc: "lorem ipsum",
+      img: menu12,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product13",
+      title: "Vegie Salad",
+      desc: "lorem ipsum",
+      img: menu13,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product14",
+      title: "Cocumber ala Asim",
+      desc: "lorem ipsum",
+      img: menu14,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   {
+      id : "product15",
+      title: "Chicken Ala Queen",
+      desc: "lorem ipsum",
+      img: menu15,
+      favorite: true,
+      popular: false,
+      prize: 20.2
+
+   },
+   
+   
+]
+
 
 export const howItWorks = [
    {
@@ -24,56 +190,3 @@ export const howItWorks = [
       img: courier
    },
 ];
-
-export const menu = [
-   {
-      id : "product1",
-      title: "Salad Tahu",
-      desc: "lorem ipsum",
-      img: menu1,
-      favorite: true
-
-   },
-   {
-      id : "product2",
-      title: "Salad Tahu",
-      desc: "lorem ipsum",
-      img: menu16new,
-      favorite: true
-
-   },
-   {
-      id : "product3",
-      title: "Salad Tahu",
-      desc: "lorem ipsum",
-      img: menu17new,
-      favorite: true
-
-   },
-   {
-      id : "product4",
-      title: "Salad Tahu",
-      desc: "lorem ipsum",
-      img: menu18new,
-      favorite: false
-
-   }, 
-   {
-      id : "product5",
-      title: "Salad Tahu",
-      desc: "lorem ipsum",
-      img: menu5,
-      favorite: false
-
-   },
-   {
-      id : "product6",
-      title: "Salad Tahu",
-      desc: "lorem ipsum",
-      img: menu6,
-      favorite: true
-
-   },
-   
-
-]
