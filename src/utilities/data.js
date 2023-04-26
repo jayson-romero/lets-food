@@ -1,7 +1,7 @@
 import courier from '../assets/HowItWorks-courier.png';
 import delivery from '../assets/HowItWorks-delivery.png';
 import order from '../assets/HowItWorks-order.png';
-import { menu1, menu2,  menu3, menu4, menu5, menu6, menu7, menu8, menu9, menu10, menu11, menu12, menu13, menu14, menu15 } from '../assets'
+import { menu1, menu2,  menu3, menu4, menu5, menu6, menu7, menu8, menu9, menu10, menu11, menu12, menu13, menu14, menu15, reviewer } from '../assets'
 
 
 
@@ -190,3 +190,28 @@ export const howItWorks = [
       img: courier
    },
 ];
+
+
+export const reviews = [
+   {
+      id : "review1",
+      name: "Naura Silvana",
+      comment: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”",
+      img: reviewer
+
+   },
+   {
+      id : "review2",
+      name: "Azura",
+      comment: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”",
+      img: reviewer
+   },
+   {
+      id : "review3",
+      name: "Jayson romero",
+      comment: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.”",
+      img: reviewer
+   },
+];
+
+

@@ -14,6 +14,12 @@ import menu13 from './Product 13.png';
 import menu14 from './Product 14.png';
 import menu15 from './Product 15.png';
 
+import wtsimg1 from './wts-img-1.jpg';
+import wtsimg2 from './wts-img-2.png';
+import wtsimg3 from './wts-img-3.png';
+
+import reviewer from './reviewer.png';
+
 
 export {
    menu1,
@@ -31,4 +37,8 @@ export {
    menu13,
    menu14,
    menu15,
+   wtsimg1,
+   wtsimg2,
+   wtsimg3,
+   reviewer
 }

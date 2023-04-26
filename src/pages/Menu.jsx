@@ -4,6 +4,7 @@ import styles from '../style'
 
 import {menu} from '../utilities/data'
 import ProductCard from '../shared/components/partials/ProductCard'
+import WhatTheySay from '../shared/components/partials/WhatTheySay'
 
 const MenuPage = () => {
   return (
@@ -23,7 +24,8 @@ const MenuPage = () => {
         ))
       }
      </div>
-     
+      
+     <WhatTheySay/>
     </div>
   )
 }

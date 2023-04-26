@@ -1,8 +1,8 @@
 
-import Header from '../components/Home/Header'
+import Header from '../components/Home/Header';
 import HowItWorks from '../shared/components/partials/HowItWorks'
 import OurMenu from '../shared/components/partials/OurMenu'
-
+import WhatTheySay from '../shared/components/partials/WhatTheySay';
 
 const HomePage = () => {
   return (
@@ -10,6 +10,7 @@ const HomePage = () => {
         <Header/>
         <HowItWorks/>
         <OurMenu/>
+        <WhatTheySay/>
     </div>
   )
 }

@@ -26,7 +26,7 @@ const styles = {
    sectionImgReverse: `flex-1 flex ${styles.flexCenter} `,
 
    sectionImg: `flex ${styles.flexCenter}`,
-   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+   sectionInfo: `flex ${styles.flexStart} flex-col`,
  };
  
  export default styles;

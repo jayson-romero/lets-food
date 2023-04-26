@@ -39,8 +39,9 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className="Footer">
-
+        <div className={`${styles.maxWidth}  ${styles.flexCenter} flex-col `}>
+            <hr className="bg-lightblack h-[2px] w-full"/>
+            <p className="py-[45px] font-Readex">© 2023 Let’sFood. ALL RIGHT RESERVED.</p>
         </div>
     </div>
   )
