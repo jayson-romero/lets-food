@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -17,6 +18,9 @@ export default {
         fontFamily: {
           Readex: ["Readex Pro", "sans-serif"],
         },
+        backgroundImage: {
+          'sign-up': "url('./src/assets/signup-bg.jpg')"
+        }
       },
       screens: {
         xs: "480px",

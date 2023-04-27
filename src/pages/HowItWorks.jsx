@@ -2,6 +2,8 @@
 import Header from "../shared/components/partials/Header"
 import HowItWork from "../components/HowItWorks/HowItWorks"
 import WhatTheySay from "../shared/components/partials/WhatTheySay"
+import JoinUs from "../shared/components/partials/JoinUs"
+import OurMenu from "../shared/components/partials/OurMenu"
 
 const HowItWorksPage = () => {
   return (
@@ -13,8 +15,9 @@ const HowItWorksPage = () => {
       </div>
 
       <HowItWork/>
+      <OurMenu/>
       <WhatTheySay/>
-     
+      <JoinUs/>
     </div>
   )
 }

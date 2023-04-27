@@ -1,4 +1,7 @@
-import Header from "../shared/components/partials/Header"
+import Header from "../shared/components/partials/Header";
+import About from "../components/AboutUs/About";
+import WhatTheySay from "../shared/components/partials/WhatTheySay";
+import JoinUs from "../shared/components/partials/JoinUs";
 
 const AboutPage = () => {
   return (
@@ -8,6 +11,10 @@ const AboutPage = () => {
           title ="Know More About Us"
           desc ="Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam."/>
       </div>
+
+      <About/>
+      <WhatTheySay/>
+      <JoinUs/>
   </div>
   )
 }
