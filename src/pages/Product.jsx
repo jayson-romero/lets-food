@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom"
 import {menu} from '../utilities/data'
 import {AiFillHeart} from 'react-icons/ai'
 import styles from "../style"
-import { useState } from "react"
 
-const ProductPage = () => {
+
+const ProductPage = ({handleClick, warning}) => {
 
   const { id } = useParams()
 
@@ -13,11 +13,6 @@ const ProductPage = () => {
   })
 
 
-  const [cartItem, setCartItem ] = useState([product])
-
-  const addTocart = () => {
-    console.log(cartItem)
-  }
 
   return (
     <div className="product-section">
@@ -27,7 +22,7 @@ const ProductPage = () => {
             
                 {
                   product.map((item)=> (
-                  <div className="flex gap-[50px]" key={item.id}>    
+                  <div className="flex gap-[50px] pb-[40px]" key={item.id}>    
                     <div className="flex-1 flex justify-center" >
                       <img src={item.img} alt="img" className="" />
                       <AiFillHeart className={`${item.favorite ? 'text-primary' : "text-black"} w-[24px] h-[24px]`}/>
@@ -38,7 +33,7 @@ const ProductPage = () => {
                       <p className="text-[15px] xs:text-[30px] pb-[10px]">{item.desc}</p>
                       <p className="text-[30px] xs:text-[50px] pb-[30px] ss:pb-[50px]">${item.prize}</p>
 
-                      <button className="btn" onClick={addTocart} >Add to Cart</button>
+                      <button className="btn" onClick={() => handleClick(item)} >Add to Cart</button>
                     </div>
                    
                   </div>
@@ -46,9 +41,14 @@ const ProductPage = () => {
 
                 }
             
-            
+              {
+              warning &&
+              <div className="font-Readex text-red text-[20px] text-center ">Item is already added to your cart</div>
+              }
            
         </div>
+
+       
     </div>
   )
 }

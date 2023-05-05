@@ -14,6 +14,7 @@ export default {
           lightblack: "rgba(29, 29, 29, 0.7)",
           white: "#FFFFFF",
           lightbg: "#FFF9EA",
+          red: "red"
         },
         fontFamily: {
           Readex: ["Readex Pro", "sans-serif"],

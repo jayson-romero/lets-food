@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png';
@@ -8,7 +9,7 @@ import {CgClose} from 'react-icons/cg'
 import styles from '../../../style';
 
 
-const NavBar = () => {
+const NavBar = ({size}) => {
   const [toggle, setToggle] = useState(false)
   
  
@@ -21,8 +22,11 @@ const NavBar = () => {
   {/*For Small Devices / Menu button */}
       <div className='flex items-center gap-[20px] sm:gap-[30px] md:hidden'>
       <FiSearch  className='icon'/>
-      <Link to="/cart">
+      <Link to="/cart" className='relative h-[44px] w-[44px] flex items-center'>
           <FaShoppingCart className='icon'/>
+          <div className='w-[15px] h-[15px] absolute top-0 right-3 text-center'>
+              <p className=' rounded-full font-black text-[14px] bg-primary '>{size}</p>
+          </div>
       </Link> 
       <button className='hidden sm:flex btn'>
               <FaSignInAlt className='icon'/>
@@ -82,7 +86,7 @@ const NavBar = () => {
             <Link to="/cart">
             <FaShoppingCart className='icon'/>
             <div className='w-[15px] h-[15px] absolute top-0 right-3 text-center'>
-              <p className=' rounded-full font-black text-[14px] bg-primary '>0</p>
+              <p className=' rounded-full font-black text-[14px] bg-primary '>{size}</p>
             </div>
             </Link>
 
@@ -101,5 +105,11 @@ const NavBar = () => {
     </div> 
   )
 }
+
+NavBar.propTypes = {
+  size: PropTypes.number,
+  
+}
+
 
 export default NavBar
