@@ -2,8 +2,10 @@ import { useParams } from "react-router-dom"
 import {menu} from '../utilities/data'
 import {AiFillHeart} from 'react-icons/ai'
 import styles from "../style"
+import { useState } from "react"
 
 const ProductPage = () => {
+
   const { id } = useParams()
 
   const product = menu.filter((item) => {
@@ -11,6 +13,11 @@ const ProductPage = () => {
   })
 
 
+  const [cartItem, setCartItem ] = useState([product])
+
+  const addTocart = () => {
+    console.log(cartItem)
+  }
 
   return (
     <div className="product-section">
@@ -31,7 +38,7 @@ const ProductPage = () => {
                       <p className="text-[15px] xs:text-[30px] pb-[10px]">{item.desc}</p>
                       <p className="text-[30px] xs:text-[50px] pb-[30px] ss:pb-[50px]">${item.prize}</p>
 
-                      <button className="btn">Add to Cart</button>
+                      <button className="btn" onClick={addTocart} >Add to Cart</button>
                     </div>
                    
                   </div>

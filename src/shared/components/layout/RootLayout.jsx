@@ -5,10 +5,10 @@ import NavBar from '../partials/NavBar';
 
 const RootLayout = ( ) => {
   return (
-    <div className='RootLayout'>
-   
+    <div className='RootLayout relative'>
+    
       <NavBar/>
- 
+    
       {/* <Header/> */}
         <Outlet/>
       <Footer/>

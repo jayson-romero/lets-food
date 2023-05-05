@@ -7,6 +7,7 @@ import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import ProductPage from './pages/Product';
 import NotFoundPage from "./pages/404";
+import CartPage from "./pages/Cart";
 
 const  App = () => {
  
@@ -21,6 +22,7 @@ const  App = () => {
                   <Route path="/howItWorks" element={<HowItWorksPage/>}/>
                   <Route path="/about" element={<AboutPage/>}/>
                   <Route path="/contact" element={<ContactPage/>}/>
+                  <Route path="/cart" element={<CartPage/>}/>
                
               </Route>
 
