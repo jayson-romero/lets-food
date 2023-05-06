@@ -36,6 +36,20 @@ const  App = () => {
       setCart([...cart, item])
     }
 
+    const handleChange = (item, d) => {
+        let ind = -1;
+        cart.forEach((data, index) => {
+          if(data.id === item.id)
+            ind = index
+        })
+        const tempArr = cart
+        tempArr[ind].amount += d
+
+        if (tempArr[ind].amount === 0)
+           tempArr[ind].amount = 1;
+          setCart([...tempArr])
+    }
+
   return (
       
           <Routes>
@@ -47,7 +61,7 @@ const  App = () => {
                   <Route path="/howItWorks" element={<HowItWorksPage/>}/>
                   <Route path="/about" element={<AboutPage/>}/>
                   <Route path="/contact" element={<ContactPage/>}/>
-                  <Route path="/cart" element={<CartPage cart={cart} setCart={setCart}/>}/>
+                  <Route path="/cart" element={<CartPage cart={cart} setCart={setCart} handleChange={handleChange}/>}/>
                
               </Route>
 
