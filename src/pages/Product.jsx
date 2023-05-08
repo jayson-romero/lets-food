@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import {menu} from '../utilities/data'
 import {AiFillHeart} from 'react-icons/ai'
 import styles from "../style"
-
+import {BiArrowBack} from 'react-icons/bi'
 
 const ProductPage = ({handleClick, warning}) => {
 
@@ -16,9 +16,15 @@ const ProductPage = ({handleClick, warning}) => {
 
   return (
     <div className="product-section">
-        <div className={`${styles.maxWidth}  ${styles.paddingY} 
+        <div className={`${styles.smallWidth}  ${styles.paddingY} 
         ${styles.paddingX} pt-[80px]`}>
          
+         <Link to="/menu" className="flex items-center py-[20px]">
+         <BiArrowBack/>
+          <span className="pl-[5px]">
+            Back to Menu
+          </span>   
+          </Link>
             
                 {
                   product.map((item)=> (

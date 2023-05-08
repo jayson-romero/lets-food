@@ -13,7 +13,7 @@ export const menu = [
       img: menu1,
       favorite: true,
       popular: true,
-      prize: 20.2,
+      prize: 20,
       amount: 1
    },
    {
@@ -23,7 +23,7 @@ export const menu = [
       img: menu2,
       favorite: true,
       popular: true,
-      prize: 20.2,
+      prize: 19,
       amount: 1
 
    },
@@ -34,7 +34,7 @@ export const menu = [
       img: menu3,
       favorite: true,
       popular: true,
-      prize: 20.2,
+      prize: 22,
       amount: 1
 
    },
@@ -45,7 +45,7 @@ export const menu = [
       img: menu4,
       favorite: false,
       popular: true,
-      prize: 20.2,
+      prize: 20,
       amount: 1
 
    }, 
@@ -56,7 +56,7 @@ export const menu = [
       img: menu5,
       favorite: false,
       popular: false,
-      prize: 20.2,
+      prize: 18,
       amount: 1
 
    },
@@ -67,7 +67,7 @@ export const menu = [
       img: menu6,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 17,
       amount: 1
 
    },
@@ -78,7 +78,7 @@ export const menu = [
       img: menu7,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 23,
       amount: 1
 
    },
@@ -90,7 +90,7 @@ export const menu = [
       img: menu8,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 25,
       amount: 1
 
    },
@@ -102,7 +102,7 @@ export const menu = [
       img: menu9,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 22,
       amount: 1
 
    },
@@ -114,7 +114,7 @@ export const menu = [
       img: menu10,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 20,
       amount: 1
 
    },
@@ -126,7 +126,7 @@ export const menu = [
       img: menu11,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 27,
       amount: 1
 
    },
@@ -138,7 +138,7 @@ export const menu = [
       img: menu12,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 20,
       amount: 1
 
    },
@@ -150,7 +150,7 @@ export const menu = [
       img: menu13,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 25,
       amount: 1
 
    },
@@ -162,7 +162,7 @@ export const menu = [
       img: menu14,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 22,
       amount: 1
 
    },
@@ -174,7 +174,7 @@ export const menu = [
       img: menu15,
       favorite: true,
       popular: false,
-      prize: 20.2,
+      prize: 23,
       amount: 1
 
    },
